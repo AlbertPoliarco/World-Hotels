@@ -5,7 +5,7 @@ import "./styles/Header.scss"
 
 const Header = () => {
   return (
-    <div>
+    <div className='header'>
       <nav className='nav-container'>
         <div className='menu'>
           <MenuOutlinedIcon className='menu-icon' />
