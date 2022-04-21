@@ -5,18 +5,20 @@
 .header {
   position: absolute;
   width: 100%;
+  z-index: 100;
 }
 .nav-container {
   @include flex-center;
   justify-content: space-between;
   font-family: $font-poppins;
+  font-size: 1.3rem;
 }
 .menu {
   display: flex;
   align-items: center;
   .menu-icon {
     font-size: 70px;
-    color: $header-color;
+    color: $main-color;
     cursor: pointer;
     margin-left: 1rem;
   }
@@ -25,6 +27,8 @@
 .logo {
   h1 {
     margin-left: 1rem;
+    color: $main-color;
+    font-size: 2rem;
   }
 }
 
@@ -37,8 +41,9 @@
     li {
       a {
         text-decoration: none;
-        color: $header-color;
+        color: $main-color;
         margin: 1rem;
+        text-transform: uppercase;
       }
     }
   }

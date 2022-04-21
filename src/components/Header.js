@@ -1,14 +1,21 @@
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined"
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "react-router-dom"
 import "./styles/Header.scss"
 
 const Header = () => {
+
+    const [openMenu, setOpenMenu] = useState(false)
+
+    const showMenu = () = > {
+      setOpenMenu(!openMenu)
+    }
+
   return (
     <div className='header'>
       <nav className='nav-container'>
         <div className='menu'>
-          <MenuOutlinedIcon className='menu-icon' />
+          <MenuOutlinedIcon className='menu-icon' onClick={showMenu}/>
         </div>
 
         <div className='logo'>
