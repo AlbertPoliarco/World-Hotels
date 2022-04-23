@@ -1,6 +1,7 @@
 import "./App.scss"
 import { Data } from "./components/Data"
 import Header from "./components/Header"
+import Second from "./components/Second"
 import Section from "./components/Section"
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div className='App'>
       <Header />
       <Section slides={Data} />
+      <Second />
     </div>
   )
 }

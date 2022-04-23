@@ -26,7 +26,7 @@ section {
     position: absolute;
     font-size: 5rem;
     left: 10%;
-    top: 30%;
+    top: 35%;
     color: $main-color;
     font-weight: 900;
     text-shadow: 10px 0px 30px $header-color;
@@ -109,9 +109,9 @@ section {
     }
     .status {
       position: absolute;
-      top: 60%;
+      top: 50%;
       left: 10%;
-      font-size: 14px;
+      font-size: 18px;
       color: $main-color;
     }
   }
